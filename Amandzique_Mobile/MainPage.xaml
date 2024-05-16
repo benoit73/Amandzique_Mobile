@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Amandzique_Mobile.MainPage">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Frame x:Name="MainFrame" Grid.Row="0" Grid.RowSpan="2" VerticalOptions="FillAndExpand">
+            
+        </Frame>
+
+        <!-- Menu horizontal toujours visible au bas -->
+        <HorizontalStackLayout Grid.Row="1" BackgroundColor="Transparent">
+            <Button Text="Playlist" />
+            <Button Text="Rechercher" />
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>
