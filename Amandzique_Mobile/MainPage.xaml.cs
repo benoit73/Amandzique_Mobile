@@ -1,23 +1,23 @@
-﻿namespace Amandzique_Mobile
+﻿using Amandzique_Mobile.Views;
+
+namespace Amandzique_Mobile
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+
+        private void BtnSearch_Clicked(object sender, EventArgs e)
         {
-            count++;
+            MainFrame.Content = new SearchPage();
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
+        private void BtnPlaylist_Clicked(object sender, EventArgs e)
+        {
+            MainFrame.Content = new PlaylistPage();
         }
     }
 

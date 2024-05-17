@@ -14,8 +14,8 @@
 
         <!-- Menu horizontal toujours visible au bas -->
         <HorizontalStackLayout Grid.Row="1" BackgroundColor="Transparent">
-            <Button Text="Playlist" />
-            <Button Text="Rechercher" />
+            <Button x:Name="BtnPlaylist" Text="Playlist" Clicked="BtnPlaylist_Clicked"/>
+            <Button x:Name="BtnSearch" Text="Rechercher" Clicked="BtnSearch_Clicked"/>
         </HorizontalStackLayout>
     </Grid>
 </ContentPage>
