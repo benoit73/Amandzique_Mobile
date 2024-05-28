@@ -53,7 +53,7 @@ namespace Amandzique_Mobile.ViewsModels
         {
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
-                ApiKey = "AIzaSyAl-kdFvRiXetX3CeMRrVD7UBbxX3gCbNk",
+                ApiKey = "-",
                 ApplicationName = this.GetType().ToString()
             });
 
